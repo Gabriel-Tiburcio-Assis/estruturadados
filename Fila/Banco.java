@@ -16,5 +16,6 @@ public class Banco{
 			e= f.retirar();
 			System.out.println("Senha a ser atendida no guiche: " + e);
 		}
+		
 	}
 }
