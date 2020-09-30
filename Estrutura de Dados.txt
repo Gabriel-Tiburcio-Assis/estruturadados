@@ -1,0 +1,1 @@
+Tipo abstrato de dados:estrutura que armazena valores,e tem operações para sua manipulação.Não estamos preocupados em como ele é implementado(tem como finalidade esconder da pessoa que está utilizando),mas sim em como utilizá-lo.
