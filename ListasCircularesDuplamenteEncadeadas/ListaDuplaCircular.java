@@ -1,7 +1,7 @@
 public class ListaDuplaCircular {
 	private CaixinhaDupla inicio;
 	
-	public ListaDUplaCircular() {
+	public ListaDuplaCircular() {
 		this.inicio = null;
 	}
 	
@@ -13,7 +13,7 @@ public class ListaDuplaCircular {
 		 CaixinhaDupla novo = new CaixinhaDupla();
 		 novo.setElemento(elemento);
 		 
-		 if (isEmpty) {
+		 if (isEmpty()) {
 		 	novo.setProximo(novo);
 		 	novo.setAnterior(novo);
 		 	inicio = novo;
@@ -23,6 +23,7 @@ public class ListaDuplaCircular {
 		 	while(tmp.getProximo() != inicio) {
 		 		tmp = tmp.getProximo();
 		 	}
+		 	inicio.setAnterior(novo);
 		 	tmp.setProximo(novo);
 		 	novo.setAnterior(tmp);
 		 	novo.setProximo(inicio); 
@@ -30,12 +31,20 @@ public class ListaDuplaCircular {
 		 }
 	}
 	
-	public void exibirNaOrdem() t
+	public void exibirNaOrdem() {
 		CaixinhaDupla tmp;
 		tmp = inicio;
 		do {
 			System.out.println("Elemento da Lista = " + tmp.getElemento());
-		} while (tmp.getProximo() != inicio);
-		
+			tmp = tmp.getProximo();
+		} while (tmp != inicio);
 	}
+	public void exibirNaOrdemInversa() {
+		CaixinhaDupla tmp;
+		tmp = inicio;
+		do {
+			System.out.println("Elemento da Lista = " + tmp.getElemento());
+			tmp = tmp.getAnterior();
+		} while (tmp != inicio);
+	}	
 }
