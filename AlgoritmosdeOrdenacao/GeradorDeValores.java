@@ -22,7 +22,7 @@ public class GeradorDeValores {
 		pos = 0;
 		for (pos = 0;pos < vetor.length;pos++) {
 			do{
-			valor = ((int)Math.random() * 1000000) % 1000000;
+			valor =(int) (Math.random() * 1000000) % 1000000;
 			} while (pertence(valor,pos));
 			vetor[pos] = valor;
 		}

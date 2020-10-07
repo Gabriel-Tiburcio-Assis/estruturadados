@@ -1,0 +1,14 @@
+Realizando BubbleSort em um vetor de 7 elementos
+------->Final da iteração 0
+25  38  37  12  57  33  92  
+------->Final da iteração 1
+25  37  12  38  33  57  92  
+------->Final da iteração 2
+25  12  37  33  38  57  92  
+------->Final da iteração 3
+12  25  33  37  38  57  92  
+------->Final da iteração 4
+12  25  33  37  38  57  92  
+------->Final da iteração 5
+12  25  33  37  38  57  92  
+12  25  33  37  38  57  92  
